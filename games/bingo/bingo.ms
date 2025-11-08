@@ -1,7 +1,7 @@
 clear
 game={}
 sounds={}
-sounds.ball_spin=file.loadSound("/usr/bingo/sounds/bingo_tumble.wav")
+sounds.ball_spin=file.loadSound("/usr/games/bingo/sounds/bingo_tumble.wav")
 game.caller={}
 game.location={"name":""}
 names=file.readLines("/usr/games/bingo/npcs/names.txt")
@@ -78,6 +78,9 @@ game.check_board=function(bcall,whose)
     end for
 end function
 game.dis_board("player")
+sounds.ball_spin.loop=1
+sounds.ball_spin.play
 bcall=input("Bcall> ")
+sounds.ball_spin.stop
 game.check_board(bcall,"player")
 game.dis_board("player")
