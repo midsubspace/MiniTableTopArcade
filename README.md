@@ -1,10 +1,10 @@
-# 🎲 Tabletop Arcade
+# 🎲 Mini Table Top Arcade
 *From simple text Bingo to a living 2D board game world — built in Mini Micro, one table at a time.*
 
 ---
 
 ## 🧩 Overview
-**Tabletop Arcade** is a long-term Mini Micro project that begins with a text-based **Bingo** prototype and aims to evolve into a full 2D world of **card and board games**.  
+**Mini Table Top Arcade** is a long-term Mini Micro project that begins with a text-based **Bingo** prototype and aims to evolve into a full 2D world of **card and board games**.  
 Inspired by *The Coin Game*, this project reimagines that cozy arcade feeling — but instead of coin-op machines, players will explore locations of interactive tabletop games.
 
 ---
@@ -53,7 +53,7 @@ Once the Bingo core is stable, the foundation can be reused for future games (ca
 ---
 
 ## 💡 Vision
-This is more than a single game — it’s the start of a **virtual tabletop arcade**.  
+This is more than a single game — it’s the start of a **virtual Mini Table Top Arcade**.  
 Each game added will bring the world closer to a playable digital boardwalk of classics.
 
 ---
@@ -69,4 +69,4 @@ MIT License — feel free to build, remix, and learn from it.
 
 ---
 
-© 2025 Quinn(midsubspace) — *Tabletop Arcade Project*
+© 2025 Quinn(midsubspace) — *Mini Table Top Arcade Project*
