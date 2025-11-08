@@ -5,20 +5,31 @@ sounds={}
 sounds.ball_spin=file.loadSound("/usr/games/bingo/sounds/bingo_tumble.wav")
 game.caller={}
 game.location={"name":""}
-names=file.readLines("/usr/games/bingo/npcs/names.txt")
-locations=file.readLines("/usr/games/bingo/locations/places.txt")
-if locations==null or locations.len==0 then
-    print "/usr/games/bingo/locations/places.txt is blank or missing"
+names=file.readLines("/usr/games/bingo/data/names.txt")
+if names==null or names.len==0 then
+    print "/usr/games/bingo/data/names.txt is either blank or missing"
 else
+    print "Loaded "+names.len+" Names"
+    game.caller.name=names[floor(rnd*names.len)]
+end if
+
+locations=file.readLines("/usr/games/bingo/data/locations.txt")
+if locations==null or locations.len==0 then
+    print "/usr/games/bingo/data/locations.txt is blank or missing"
+else
+    print "Loaded "+locations.len+" Locations"
     while game.location.name==""
         game.location.name=locations[floor(rnd*locations.len)]
     end while
 end if
-if names==null or names.len==0 then
-    print "/usr/games/bingo/npc/names.txt is either blank or missing"
+
+game.caller.sayings=file.readLines("/usr/games/bingo/data/caller_sayings.txt")
+if game.caller.sayings==null or names.len==0 then
+    print "/usr/games/bingo/data/caller_sayings.txt is either blank or missing"
 else
-    game.caller.name=names[floor(rnd*names.len)]
+    print "Loaded "+game.caller.sayings.len+" Call Outs"
 end if
+wait 3;clear
 game.player={}
 game.player.name="Dev"//input("What's your name?");clear
 print "Welcome to "+game.location.name+", "+game.player.name+char(10)+"The Caller for this evening is "+game.caller.name
@@ -91,10 +102,12 @@ game.main_loop=function()
         wait 3
         bcall=game.call_ball
         sounds.ball_spin.stop
-        print "Hot off the tumbler — it's "+bcall
+        game.caller.sayings.shuffle
+        clear
+        print game.caller.sayings[0]+" "+bcall+char(10)
         wait 3
-        print char(10)
         game.check_board(bcall,"player")
+        clear
         game.dis_board("player")
         input("Ready for next round?")
     end while
