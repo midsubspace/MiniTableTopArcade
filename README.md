@@ -78,4 +78,4 @@ MIT License — feel free to build, remix, and learn from it.
 
 ---
 
-© 2025 Quinn(midsubspace) — *Mini Table Top Arcade Project*
+© 2025 (Midsubspace) — *Mini Table Top Arcade Project*
