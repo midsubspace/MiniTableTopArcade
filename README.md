@@ -1,4 +1,6 @@
 # 🎲 Mini Table Top Arcade
+<img width="1009" height="785" alt="image" src="https://github.com/user-attachments/assets/29d5b2ee-5ca2-404c-b545-4bb03520560a" />
+
 *From simple text Bingo to a living 2D board game world — built in Mini Micro, one table at a time.*
 
 ---
