@@ -1,5 +1,6 @@
 clear
 game={}
+game.ballPool=["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11", "B12", "B13", "B14", "B15", "I16", "I17", "I18", "I19", "I20", "I21", "I22", "I23", "I24", "I25", "I26", "I27", "I28", "I29", "I30", "N31", "N32", "N33", "N34", "N35", "N36", "N37", "N38", "N39", "N40", "N41", "N42", "N43", "N44", "N45", "G46", "G47", "G48", "G49", "G50", "G51", "G52", "G53", "G54", "G55", "G56", "G57", "G58", "G59", "G60", "O61", "O62", "O63", "O64", "O65", "O66", "O67", "O68", "O69", "O70", "O71", "O72", "O73", "O74", "O75"]
 sounds={}
 sounds.ball_spin=file.loadSound("/usr/games/bingo/sounds/bingo_tumble.wav")
 game.caller={}
@@ -21,7 +22,10 @@ end if
 game.player={}
 game.player.name="Dev"//input("What's your name?");clear
 print "Welcome to "+game.location.name+", "+game.player.name+char(10)+"The Caller for this evening is "+game.caller.name
-
+game.call_ball=function()
+    game.ballPool.shuffle
+    return game.ballPool.pull
+end function
 game.gen_board=function
     board={
         "B": [],
@@ -77,9 +81,23 @@ game.check_board=function(bcall,whose)
         end if
     end for
 end function
-game.dis_board("player")
-sounds.ball_spin.play
-bcall=input("Bcall> ")
-sounds.ball_spin.stop
-game.check_board(bcall,"player")
-game.dis_board("player")
+
+game.main_loop=function()
+    while game.ballPool.len!=0
+        wait 3
+        clear
+        game.dis_board("player")
+        sounds.ball_spin.play
+        wait 3
+        bcall=game.call_ball
+        sounds.ball_spin.stop
+        print "Hot off the tumbler — it’s "+bcall
+        wait 3
+        print char(10)
+        game.check_board(bcall,"player")
+        game.dis_board("player")
+        input("Ready for next round?")
+    end while
+end function
+
+game.main_loop
