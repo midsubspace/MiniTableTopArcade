@@ -31,7 +31,16 @@ Once the Bingo core is stable, the foundation can be reused for future games (ca
 - Player-controlled marking  
 - Bingo button validation  
 - NPC opponents  
-- Win/loss and score tracking  
+- Win/loss and score tracking
+
+- ### Phase 2.5: Try and Repeat the above with other games such but not just the games listed below:
+- Uno
+- Candy Land
+- Snakes and Ladders
+- BlackJack
+- War
+- Texas Holdem
+- And More
 
 ### Phase 3: Visual Layer (2D Mini Micro)
 - Rendered Bingo cards and boards  
