@@ -54,7 +54,7 @@ game.gen_board=function
     end function
     pool=gen_pool(1,15);board.B=[pool.pull,pool.pull,pool.pull,pool.pull,pool.pull]
     pool=gen_pool(16,30);board.I=[pool.pull,pool.pull,pool.pull,pool.pull,pool.pull]
-    pool=gen_pool(31,45);board.N=[pool.pull,pool.pull,pool.pull,pool.pull,pool.pull]
+    pool=gen_pool(31,45);board.N=[pool.pull,pool.pull,"X",pool.pull,pool.pull]
     pool=gen_pool(46,60);board.G=[pool.pull,pool.pull,pool.pull,pool.pull,pool.pull]
     pool=gen_pool(61,75);board.O=[pool.pull,pool.pull,pool.pull,pool.pull,pool.pull]
     return board
@@ -93,24 +93,58 @@ game.check_board=function(bcall,whose)
     end for
 end function
 
+game.check_bingo=function(whose)
+    board=game[whose].board
+    cols=["B","I","N","G","O"]
+    for row in range(0,4)
+        win=true
+        for col in cols
+            if board[col][row] != "X" then win=false
+        end for
+        if win==true then return win
+    end for
+
+    for col in cols
+        win=true
+        for val in board[col]
+            if val!="X" then win= false
+        end for
+        if win==true then return win
+    end for
+
+    win=true
+    for i in range(0,4)
+        if board[cols[i]][i] != "X" then win=false
+    end for
+    if win==true then return win
+
+    for i in range(0,4)
+        if board[cols[i]][4-1]!="X" then win=false
+    end for
+    if win==true then return win
+    return false
+end function
+
 game.main_loop=function()
-    while game.ballPool.len!=0
-        wait 3
-        clear
-        game.dis_board("player")
-        sounds.ball_spin.play
-        wait 3
-        bcall=game.call_ball
-        sounds.ball_spin.stop
-        game.caller.sayings.shuffle
-        clear
-        print game.caller.sayings[0]+" "+bcall+char(10)
-        wait 3
-        game.check_board(bcall,"player")
-        clear
-        game.dis_board("player")
-        input("Ready for next round?")
+    while game.check_bingo("player")==false
+            wait 3
+            clear
+            game.dis_board("player")
+            sounds.ball_spin.play
+            wait 3
+            bcall=game.call_ball
+            sounds.ball_spin.stop
+            game.caller.sayings.shuffle
+            clear
+            print game.caller.sayings[0]+" "+bcall+char(10)
+            game.dis_board("player")
+            wait 2
+            print char(10)
+            game.check_board(bcall,"player")
+            game.dis_board("player")
+            input("Ready for next round?")
     end while
+    print "You Win"
 end function
 
 game.main_loop
