@@ -18,10 +18,9 @@ if names==null or names.len==0 then
 else
     game.caller.name=names[floor(rnd*names.len)]
 end if
-
 game.player={}
 game.player.name="Dev"//input("What's your name?");clear
-print "Weclome to "+game.location.name+", "+game.player.name+char(10)+"The Caller for this evening is "+game.caller.name
+print "Welcome to "+game.location.name+", "+game.player.name+char(10)+"The Caller for this evening is "+game.caller.name
 
 game.gen_board=function
     board={
