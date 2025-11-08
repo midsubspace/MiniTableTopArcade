@@ -24,18 +24,18 @@ Once the Bingo core is stable, the foundation can be reused for future games (ca
 
 ## 🧱 Planned Features (Progressive Goals)
 
-### Phase 1: Text Bingo Prototype ✅
+### Phase 1: Text Bingo Prototype 🚧
 - Basic caller and card logic  
 - Auto-win detection  
 - Simple text interface  
 
-### Phase 2: Interactive Bingo
+### Phase 2: Interactive Bingo 🔜
 - Player-controlled marking  
 - Bingo button validation  
 - NPC opponents  
 - Win/loss and score tracking
 
-- ### Phase 2.5: Try and Repeat the above with other games such but not just the games listed below:
+- ### Phase 2.5: Try and Repeat the above with other games such but not just the games listed below: 🔜
 - Uno
 - Candy Land
 - Snakes and Ladders
@@ -44,12 +44,12 @@ Once the Bingo core is stable, the foundation can be reused for future games (ca
 - Texas Holdem
 - And More
 
-### Phase 3: Visual Layer (2D Mini Micro)
+### Phase 3: Visual Layer (2D Mini Micro) 🔜
 - Rendered Bingo cards and boards  
 - Menu system for game selection  
 - Basic environment art  
 
-### Phase 4: Tabletop Hub
+### Phase 4: Tabletop Hub 🔜
 - Walkable 2D space  
 - Multiple playable games  
 - Currency/ticket rewards  
