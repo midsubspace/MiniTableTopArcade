@@ -91,7 +91,7 @@ game.main_loop=function()
         wait 3
         bcall=game.call_ball
         sounds.ball_spin.stop
-        print "Hot off the tumbler — it’s "+bcall
+        print "Hot off the tumbler — it's "+bcall
         wait 3
         print char(10)
         game.check_board(bcall,"player")
