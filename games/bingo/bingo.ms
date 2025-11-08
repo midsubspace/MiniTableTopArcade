@@ -78,7 +78,6 @@ game.check_board=function(bcall,whose)
     end for
 end function
 game.dis_board("player")
-sounds.ball_spin.loop=1
 sounds.ball_spin.play
 bcall=input("Bcall> ")
 sounds.ball_spin.stop
