@@ -125,8 +125,8 @@ game.check_bingo=function(whose)
     return false
 end function
 
-game.main_loop=function()
-    while game.check_bingo("player")==false
+game.main_loop=function(p_input=null)
+    while game.check_bingo("player")==false and p_input!="bingo"
             wait 3
             clear
             game.dis_board("player")
@@ -140,9 +140,13 @@ game.main_loop=function()
             game.dis_board("player")
             wait 2
             print char(10)
-            game.check_board(bcall,"player")
-            game.dis_board("player")
-            input("Ready for next round?")
+            p_input=input("Match or a bingo> ")
+            if ["b","i","n","g","o"].indexOf(p_input.split("")[0])!=null then
+                game.check_board(p_input,"player")
+                game.dis_board("player")
+            else if p_input=="bingo" then
+                if game.check_bingo("player")==true then continue
+            end if
     end while
     print "You Win"
 end function
