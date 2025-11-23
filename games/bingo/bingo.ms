@@ -140,7 +140,7 @@ game.main_loop=function(p_input=null)
             game.dis_board("player")
             wait 2
             print char(10)
-            p_input=input("Match or a bingo> ")
+            p_input=input("If it matches your card enter the caller or type bingo, else hit enter to wait for next call> ")
             if p_input=="" then
                 continue
             else if ["b","i","n","g","o"].indexOf(p_input.split("")[0])!=null or ["B","I","N","G","O"].indexOf(p_input.split("")[0])!=null then
