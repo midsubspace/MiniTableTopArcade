@@ -10,6 +10,10 @@ game.dis_board=function()
     end for
 end function
 game.roll=function
-    die=ceil()
+    die=ceil(rnd*6)
+    if die==0 then die=1
+    game.die=die
+    game.dieface=char(9855+die)
 end function
-game.dis_board
+game.roll
+print "You rolled a "+game.dieface+":"+game.die
