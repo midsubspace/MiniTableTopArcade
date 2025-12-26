@@ -1,2 +1,2 @@
-load "/usr/games/bingo/bingo.ms"
+load "/usr/games/penny_drop/penny.ms"
 run
