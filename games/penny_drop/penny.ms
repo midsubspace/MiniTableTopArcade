@@ -14,6 +14,7 @@ game.sprites={}
 game.images.board=file.loadImage("/usr/games/penny_drop/images/board.png")
 game.images.penny=file.loadImage("/usr/games/penny_drop/images/penny_slot.png")
 game.drop_snd=file.loadSound("/usr/games/penny_drop/sounds/drop_sound.wav")
+game.roll_snd=file.loadSound("/usr/games/penny_drop/sounds/die_roll.wav")
 game.turn="player"
 game.display_spr=function(sprite=null)
     if sprite==null then input("ERR:display_spr: No sprite var was passed to function notify dev")
@@ -155,16 +156,27 @@ game.display_penny=function(slot=null)
 end function
 
 game.display_score=function()
+    text.clear
+    text.row = 30
     print  game.player.name+"'s Coins: "+game.player.coins
     print "Computer Coins: "+game.computer_one.coins
     print "Playing: "+game.turn
 end function
 game.roll=function(die=null)
+    n=0
+    while n!=10
+        game.roll_snd.play
+        game.die=ceil(rnd*6)
+        game.display_spr "die"
+        wait 0.1
+        n=n+1
+    end while
     if die==null then die=ceil(rnd*6)
     if die==0 then die=1
     game.roll_history.push(die)
     game.die=die
     game.dieface=char(9855+die)
+
 end function
 game.display_spr("board")
 game.die=1
