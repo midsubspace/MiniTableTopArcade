@@ -1,2 +1,2 @@
-load "/usr/games/penny_drop/penny.ms"
+load "/usr/shared/scripts/menu.ms"
 run
