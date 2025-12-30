@@ -5,8 +5,10 @@ end if
 import "msl"
 game={}
 game.roll_history=[]
-game.player={"name":"Dev","coins":12}
-game.computer_one={"name":"Computer 1","coins":12}
+game.player={"name":"Elsbeth","coins":12}
+game.player2={"name":"Matlock","coins":12}
+game.player.name=input("Player One's Name> ")
+game.player2.name=input("Player Two's Name> ")
 game.board=["1","2","3","4","5","6"]
 game.slots={1:0,2:0,3:0,4:0,5:0,6:0}
 game.images={}
@@ -46,8 +48,8 @@ game.display_penny=function(slot=null)
     if game.die!=6 then
         for i in game.slots
             if game.slots[game.die]==1 and skip==0 then
-                print "You Lost Take all the pennys on the board!"
-                wait 5
+                print "Here's the Pennies"
+                wait 4
                 clear
                 display(4).sprites=[]
                 game.display_spr("board")
@@ -55,10 +57,20 @@ game.display_penny=function(slot=null)
                 skip=1
                 for i in game.slots
                     if i.value==1 then
-                        if game.turn=="player" then game.player.coins=game.player.coins+1
+                        if game.turn=="player" then 
+                            game.player.coins=game.player.coins+1
+                        else if game.turn=="player2" then 
+                            game.player2.coins=game.player2.coins+1
+                        end if
                     end if
                 end for
+                if game.turn=="player" then 
+                    game.turn="player2"
+                else if game.turn=="player2" then
+                    game.turn="player"
+                end if
                 game.slots={1:0,2:0,3:0,4:0,5:0,6:0}
+                game.display_score
                 return
             end if
         end for
@@ -68,8 +80,8 @@ game.display_penny=function(slot=null)
         game.slots[slot]=1
         if game.turn=="player" then 
             game.player.coins=game.player.coins-1
-        else if game.turn=="Computer One" then
-            game.computer_one.coins=game.computer_one.coins-1
+        else if game.turn=="player2" then
+            game.player2.coins=game.player2.coins-1
         end if
         penny_1=new Sprite
         penny_1.image=game.images.penny
@@ -82,8 +94,8 @@ game.display_penny=function(slot=null)
         game.slots[slot]=1
         if game.turn=="player" then 
             game.player.coins=game.player.coins-1
-        else if game.turn=="Computer One" then
-            game.computer_one.coins=game.computer_one.coins-1
+        else if game.turn=="player2" then
+            game.player2.coins=game.player2.coins-1
         end if
         penny_2=new Sprite
         penny_2.image=game.images.penny
@@ -96,8 +108,8 @@ game.display_penny=function(slot=null)
         game.slots[slot]=1
         if game.turn=="player" then 
             game.player.coins=game.player.coins-1
-        else if game.turn=="Computer One" then
-            game.computer_one.coins=game.computer_one.coins-1
+        else if game.turn=="player2" then
+            game.player2.coins=game.player2.coins-1
         end if
         penny_3=new Sprite
         penny_3.image=game.images.penny
@@ -110,8 +122,8 @@ game.display_penny=function(slot=null)
         game.slots[slot]=1
         if game.turn=="player" then 
             game.player.coins=game.player.coins-1
-        else if game.turn=="Computer One" then
-            game.computer_one.coins=game.computer_one.coins-1
+        else if game.turn=="player2" then
+            game.player2.coins=game.player2.coins-1
         end if
         penny_4=new Sprite
         penny_4.image=game.images.penny
@@ -124,8 +136,8 @@ game.display_penny=function(slot=null)
         game.slots[slot]=1
         if game.turn=="player" then 
             game.player.coins=game.player.coins-1
-        else if game.turn=="Computer One" then
-            game.computer_one.coins=game.computer_one.coins-1
+        else if game.turn=="player2" then
+            game.player2.coins=game.player2.coins-1
         end if
         penny_5=new Sprite
         penny_5.image=game.images.penny
@@ -137,8 +149,8 @@ game.display_penny=function(slot=null)
     else if slot==6 then
         if game.turn=="player" then 
             game.player.coins=game.player.coins-1
-        else if game.turn=="Computer One" then
-            game.computer_one.coins=game.computer_one.coins-1
+        else if game.turn=="player2" then
+            game.player2.coins=game.player2.coins-1
         end if
         penny_6=new Sprite
         penny_6.image=game.images.penny
@@ -159,8 +171,8 @@ game.display_score=function()
     text.clear
     text.row = 30
     print  game.player.name+"'s Coins: "+game.player.coins
-    print "Computer Coins: "+game.computer_one.coins
-    print "Playing: "+game.turn
+    print game.player2.name+"'s Coins: "+game.player2.coins
+    print "Playing: "+game[game.turn].name
 end function
 game.roll=function(die=null)
     n=0
@@ -173,22 +185,46 @@ game.roll=function(die=null)
     end while
     if die==null then die=ceil(rnd*6)
     if die==0 then die=1
-    game.roll_history.push(die)
+    game.roll_history.push(die+":"+game.turn+":"+game[game.turn].coins)
     game.die=die
     game.dieface=char(9855+die)
-
 end function
 game.display_spr("board")
 game.die=1
 game.display_spr "die"
 game.display_score
 while true
+    if game.player.coins==0 then
+        game.display_score
+        print game.player.name+"Has Won!"
+        print "Type run then hit enter to play again"
+        exit
+    else if game.player2.coins==0 then
+        game.display_score
+        print game.player2.name+"Has Won!"
+        print "Type run then hit enter to play again"
+        exit
+    end if
     if mouse.button then
-        if game.sprites.die.isClicked then
+        if game.sprites.die.is_Clicked then
             game.roll
             game.display_spr "die"
             game.display_penny game.die
             game.display_score
+        end if
+        else if mouse.button(1) then
+            if game.sprites.die.is_Clicked then
+                if game.turn=="player" then
+                    game.turn="player2"
+                    print "Board has been passed to "+game.player2.name
+                    game.display_score
+                    wait .5
+                else if game.turn=="player2" then
+                    game.turn="player"
+                    print "Board has been passed to "+game.player.name
+                    wait .5
+                    game.display_score
+                end if
         end if
     end if
 end while
