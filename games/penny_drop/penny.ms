@@ -3,6 +3,10 @@ if env.importPaths.indexOf("/usr/shared/scripts") == null then
     env.importPaths.push "/usr/shared/scripts"
 end if
 import "msl"
+if env.importPaths.indexOf("/usr/shared/scripts") == null then
+    env.importPaths.push "/usr/shared/scripts"
+end if
+import "msl"
 game={}
 game.roll_history=[]
 game.player={"name":"Elsbeth","coins":12}
@@ -189,44 +193,6 @@ game.roll=function(die=null)
     game.die=die
     game.dieface=char(9855+die)
 end function
-game.display_spr("board")
-game.die=1
-game.display_spr "die"
-game.display_score
-while true
-    if game.player.coins==0 then
-        clear
-        game.display_score
-        print game.player.name+" Has Won!"
-        wait 4
-        reset;load "/usr/shared/scripts/menu.ms";clear;run
-    else if game.player2.coins==0 then
-        clear
-        game.display_score
-        print game.player2.name+" Has Won!"
-        wait 4
-        reset;load "/usr/shared/scripts/menu.ms";clear;run
-    end if
-    if mouse.button then
-        if game.sprites.die.is_Clicked then
-            game.roll
-            game.display_spr "die"
-            game.display_penny game.die
-            game.display_score
-        end if
-        else if mouse.button(1) then
-            if game.sprites.die.is_Clicked then
-                if game.turn=="player" then
-                    game.turn="player2"
-                    print "Board has been passed to "+game.player2.name
-                    game.display_score
-                    wait .5
-                else if game.turn=="player2" then
-                    game.turn="player"
-                    print "Board has been passed to "+game.player.name
-                    wait .5
-                    game.display_score
-                end if
-        end if
-    end if
-end while
+game.dis_board
+game.roll
+print "You rolled a "+game.dieface+":"+game.die
