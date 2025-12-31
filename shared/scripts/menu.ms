@@ -5,6 +5,9 @@ end if
 import "msl"
     main_menu={}
     main_menu.sprites={}
+    main_menu.music={}
+    main_menu.music.one=file.loadSound("/usr/shared/sounds//main_menu/1.mp3")
+    if "/usr/LICENSE" then main_menu.music.one.play 0
 display_background=function
     menu=new Sprite
     menu.image=file.loadImage("/usr/shared/images/main_menu_bkg.png")
@@ -34,7 +37,17 @@ display_games=function
         end if
     end while
 end function
-
+display_credits=function
+    clear
+    credits = new Sprite
+    credits.image=file.loadImage("/usr/shared/images/credits.png")
+    credits.x=435
+    credits.y=355
+    credits.scale=[0.5,0.5]
+    display(4).sprites.push credits
+    wait 5
+    reset;load "/usr/shared/scripts/menu.ms";clear;run
+end function
 display_startbtn=function()
     start=new Sprite
     start.image=file.loadImage("/usr/shared/images/start_btn.png")
@@ -51,15 +64,27 @@ display_settingsbtn=function()
     main_menu.sprites.settings=settings
     display(4).sprites.push settings
 end function
-    display_background
-    display_startbtn
-    display_settingsbtn
+display_creditsbtn=function()
+    credits=new Sprite
+    credits.image=file.loadImage("/usr/shared/images/credits_btn.png")
+    credits.scale=[0.4,0.4]
+    credits.x=397
+    credits.y=310
+    main_menu.sprites.credits=credits
+    display(4).sprites.push credits
+end function
+display_background
+display_startbtn
+display_settingsbtn
+display_creditsbtn
 while true
     if mouse.button then
         if main_menu.sprites.start.is_Clicked then
             display_games
         else if main_menu.sprites.settings.is_Clicked then
             continue
+        else if main_menu.sprites.credits.is_Clicked then
+            display_credits
         end if
     else if mouse.button(1) then 
         reset;load "/usr/shared/scripts/menu.ms";clear;run
