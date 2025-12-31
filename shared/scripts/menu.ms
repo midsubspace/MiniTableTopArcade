@@ -6,8 +6,8 @@ import "msl"
     main_menu={}
     main_menu.sprites={}
     main_menu.music={}
-    main_menu.music.one=file.loadSound("/usr/shared/sounds//main_menu/1.mp3")
-    if "/usr/LICENSE" then main_menu.music.one.play 0
+    main_menu.music.one=file.loadSound("/usr/shared/sounds/main_menu/main_music.ogg")
+    main_menu.music.one.play
 display_background=function
     menu=new Sprite
     menu.image=file.loadImage("/usr/shared/images/main_menu_bkg.png")
