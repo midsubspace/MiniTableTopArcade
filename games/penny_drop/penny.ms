@@ -9,8 +9,8 @@ end if
 import "msl"
 game={}
 game.roll_history=[]
-game.player={"name":null,"coins":12}
-game.player2={"name":null,"coins":12}
+game.player={"name":"Elsbeth","coins":12}
+game.player2={"name":"Matlock","coins":12}
 game.player.name=input("Player One's Name> ")
 game.player2.name=input("Player Two's Name> ")
 game.board=["1","2","3","4","5","6"]
