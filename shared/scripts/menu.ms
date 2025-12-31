@@ -6,7 +6,7 @@ import "msl"
     main_menu={}
     main_menu.sprites={}
     main_menu.music={}
-    main_menu.music.one=file.loadSound("/usr/shared/sounds/main_menu/main_music.wav")
+    main_menu.music.one=file.loadSound("/usr/shared/sounds/main_menu/main_music.ogg")
     main_menu.music.one.play
 display_background=function
     menu=new Sprite
