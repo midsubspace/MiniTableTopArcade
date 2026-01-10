@@ -63,16 +63,16 @@ game.display_spr=function(sprite=null)
         game.sprites.board=new Sprite
         game.sprites.board.image=game.images[sprite]
         game.sprites.board.scale=[0.5,0.5]
-        game.sprites.board.x=480
-        game.sprites.board.y=320
+        game.sprites.board.x=468
+        game.sprites.board.y=186
         game.sprites.board.name="board"
         display(4).sprites.push game.sprites.board
     else if sprite=="die" then
         game.sprites.die=new Sprite
         game.images.die=file.loadImage("/usr/games/penny_drop/images/"+game.die+".png")
         game.sprites.die.image=game.images[sprite]
-        game.sprites.die.x=458
-        game.sprites.die.y=129
+        game.sprites.die.x=294
+        game.sprites.die.y=171
         //spr.scale=[0.5,0.5]
         game.sprites.die.name=game.die+"_die"
         display(4).sprites.push game.sprites.die
@@ -114,8 +114,8 @@ game.display_penny=function(slot=null)
         penny_1.image=game.images.penny
         penny_1.name="penny_"+slot
         penny_1.scale=[0.5,0.5]
-        penny_1.x=261
-        penny_1.y=376
+        penny_1.x=251
+        penny_1.y=240
         display(4).sprites.push penny_1
     else if slot==2 then
         game.slots[slot]=1
@@ -124,8 +124,8 @@ game.display_penny=function(slot=null)
         penny_2.image=game.images.penny
         penny_2.name="penny_"+slot
         penny_2.scale=[0.5,0.5]
-        penny_2.x=371
-        penny_2.y=376
+        penny_2.x=358
+        penny_2.y=242
         display(4).sprites.push penny_2
     else if slot==3 then
         game.slots[slot]=1
@@ -134,8 +134,8 @@ game.display_penny=function(slot=null)
         penny_3.image=game.images.penny
         penny_3.name="penny_"+slot
         penny_3.scale=[0.5,0.5]
-        penny_3.x=480
-        penny_3.y=371
+        penny_3.x=468
+        penny_3.y=241
         display(4).sprites.push penny_3
     else if slot==4 then
         game.slots[slot]=1
@@ -144,8 +144,8 @@ game.display_penny=function(slot=null)
         penny_4.image=game.images.penny
         penny_4.name="penny_"+slot
         penny_4.scale=[0.5,0.5]
-        penny_4.x=592
-        penny_4.y=371
+        penny_4.x=574
+        penny_4.y=240
         display(4).sprites.push penny_4
     else if slot==5 then
         game.slots[slot]=1
@@ -154,8 +154,8 @@ game.display_penny=function(slot=null)
         penny_5.image=game.images.penny
         penny_5.name="penny_"+slot
         penny_5.scale=[0.5,0.5]
-        penny_5.x=701
-        penny_5.y=376
+        penny_5.x=689
+        penny_5.y=237
         display(4).sprites.push penny_5
     else if slot==6 then
         game.turn.value.coins=game.turn.value.coins-1
@@ -163,8 +163,8 @@ game.display_penny=function(slot=null)
         penny_6.image=game.images.penny
         penny_6.name="penny_"+slot
         penny_6.scale=[0.5,0.5]
-        penny_6.x=480
-        penny_6.y=305
+        penny_6.x=469
+        penny_6.y=173
         display(4).sprites.push penny_6
         wait 0.5
         display(4).sprites.pop
