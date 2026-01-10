@@ -1,14 +1,1 @@
 Starting up...
-INFO at 1.964s: Loaded 48 Names from /usr/games/penny_drop/data/names.txt
-INFO at 12.432s: {"key": 1, "value": {"name": "josh", "coins": 12, "npc": 0, "active": 1}}
-INFO at 12.44s: {"key": 2, "value": {"name": "tim", "coins": 12, "npc": 0, "active": 1}}
-INFO at 12.448s: {"key": 1, "value": {"name": "josh", "coins": 12, "npc": 0, "active": 1}}
-INFO at 12.454s: {"key": 2, "value": {"name": "tim", "coins": 12, "npc": 0, "active": 1}}
-INFO at 15.497s: {"key": 1, "value": {"name": "josh", "coins": 11, "npc": 0, "active": 1}}
-INFO at 15.508s: {"key": 2, "value": {"name": "tim", "coins": 12, "npc": 0, "active": 1}}
-INFO at 17.199s: {"key": 1, "value": {"name": "josh", "coins": 11, "npc": 0, "active": 1}}
-INFO at 17.208s: {"key": 2, "value": {"name": "tim", "coins": 12, "npc": 0, "active": 1}}
-INFO at 18.964s: {"key": 1, "value": {"name": "josh", "coins": 11, "npc": 0, "active": 1}}
-INFO at 18.973s: {"key": 2, "value": {"name": "tim", "coins": 11, "npc": 0, "active": 1}}
-INFO at 20.433s: {"key": 1, "value": {"name": "josh", "coins": 11, "npc": 0, "active": 1}}
-INFO at 20.442s: {"key": 2, "value": {"name": "tim", "coins": 11, "npc": 0, "active": 1}}

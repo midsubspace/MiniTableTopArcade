@@ -7,7 +7,7 @@ main_menu={}
 main_menu.sprites={}
 main_menu.music={}
 main_menu.music.one=file.loadSound("/usr/shared/sounds/main_menu/main_music.ogg")
-main_menu.music.one.play
+main_menu.music.one.play msl.percentToVolume(4)
 display_background=function
     menu=new Sprite
     menu.image=file.loadImage("/usr/shared/images/main_menu_bkg.png")

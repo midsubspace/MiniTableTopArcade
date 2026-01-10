@@ -31,6 +31,13 @@ Sprite.is_Clicked=function
 	return self.contains(mouse)
 end function
 
+percentToVolume = function(percent) //converts 100% to vol number
+    if percent < 0 then percent = 0
+    if percent > 100 then percent = 100
+    return percent / 100
+end function
+
+
 // Logging system
 
 logFile = "log.txt"
