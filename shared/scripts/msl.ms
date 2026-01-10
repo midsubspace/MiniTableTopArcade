@@ -45,7 +45,7 @@ end function
 
 recordStartup
 
-log = function(msg)
+msl.log = function(msg)
 	content = file.readLines(logFile)
 
 	content.push "INFO: " + msg
@@ -53,7 +53,7 @@ log = function(msg)
 	file.writeLines logFile, content
 end function
 
-warn = function(msg)
+msl.warn = function(msg)
 	content = file.readLines(logFile)
 
 	content.push "WARNING: " + msg
@@ -61,7 +61,7 @@ warn = function(msg)
 	file.writeLines logFile, content
 end function
 
-error = function(msg)
+msl.error = function(msg)
 	content = file.readLines(logFile)
 
 	content.push "ERROR: " + msg
@@ -69,7 +69,7 @@ error = function(msg)
 	file.writeLines logFile, content
 end function
 
-fatal = function(msg)
+msl.fatal = function(msg)
 	content = file.readLines(logFile)
 
 	content.push ("FATAL: " + msg).upper
