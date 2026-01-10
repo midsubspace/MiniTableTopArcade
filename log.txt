@@ -1,5 +1,1 @@
 Starting up...
-INFO: Player spawned fine
-WARNING: Something is not working
-ERROR: There is definitly something wrong here
-FATAL: BIG ERROR, ABORTING

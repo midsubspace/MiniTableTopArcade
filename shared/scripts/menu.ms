@@ -3,7 +3,6 @@ if env.importPaths.indexOf("/usr/shared/scripts") == null then
     env.importPaths.push "/usr/shared/scripts"
 end if
 msl={};import "msl"
-exit
 main_menu={}
 main_menu.sprites={}
 main_menu.music={}
