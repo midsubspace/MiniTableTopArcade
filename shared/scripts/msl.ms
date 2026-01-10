@@ -30,3 +30,62 @@ Sprite.is_Clicked=function
 	// Return whether the mouse was released within bounds.
 	return self.contains(mouse)
 end function
+
+percentToVolume = function(percent) //converts 100% to vol number
+    if percent < 0 then percent = 0
+    if percent > 100 then percent = 100
+    return percent / 100
+end function
+
+
+// Logging system
+
+logFile = "log.txt"
+prevLogFile = "prev_log.txt"
+
+recordStartup = function
+	content = []
+
+	if file.exists(logFile) then
+		if file.exists(prevLogFile) then file.delete(prevLogFile)
+		file.copy logFile, prevLogFile
+	end if
+
+	content.push "Starting up..."
+
+	file.writeLines logFile, content
+end function
+
+recordStartup
+
+log = function(msg)
+	content = file.readLines(logFile)
+
+	content.push "INFO at " + round(time, 3) + "s: " + msg
+
+	file.writeLines logFile, content
+end function
+
+warn = function(msg)
+	content = file.readLines(logFile)
+
+	content.push "WARNING at " + round(time, 3) + "s: " + msg
+
+	file.writeLines logFile, content
+end function
+
+error = function(msg)
+	content = file.readLines(logFile)
+
+	content.push "ERROR at " + round(time, 3) + "s: " + msg
+
+	file.writeLines logFile, content
+end function
+
+fatal = function(msg)
+	content = file.readLines(logFile)
+
+	content.push ("FATAL at " + round(time, 3) + "s: " + msg).upper
+
+	file.writeLines logFile, content
+end function

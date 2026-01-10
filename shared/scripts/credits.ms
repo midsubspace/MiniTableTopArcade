@@ -5,6 +5,7 @@ credits.sounds=[]
 credits.people.push("Joe Strout")
 credits.people.push("BibleClinger")
 credits.people.push("Redspark")
+credits.people.push("DSlower")
 credits.guides.push("https://miniscript.org/wiki/Main_Page")
 credits.guides.push("https://miniscript.org/books/index.html")
 credits.guides.push("https://miniscript.org/MiniMicro/index.html#learn")
