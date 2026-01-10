@@ -1,104 +1,112 @@
 Starting up...
 INFO: Loaded 48 Names from /usr/games/penny_drop/data/names.txt
-INFO: {"key": 1, "value": {"name": "josh", "coins": 12, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "josh", "coins": 12, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "josh", "coins": 11, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "josh", "coins": 10, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "josh", "coins": 9, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "josh", "coins": 10, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "josh", "coins": 10, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "josh", "coins": 10, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "josh", "coins": 10, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 11, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: There are 0 Pennies on the board
-INFO: {"key": 1, "value": {"name": "josh", "coins": 10, "npc": 0, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Second Cousin Nate", "coins": 10, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Uncle Joe", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Uncle Tom", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Aunt Nancy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Great-Aunt Bonnie", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 12, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Great-Uncle Frank", "coins": 12, "npc": 1, "active": 1}}
-INFO: There are 0 Pennies on the board
+INFO: {"key": 1, "value": {"name": "1", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 7, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 7, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 7, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 7, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 1, "value": {"name": "1", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 2, "value": {"name": "2", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 3, "value": {"name": "3", "coins": 7, "npc": 0, "active": 1}}
+INFO: {"key": 4, "value": {"name": "4", "coins": 4, "npc": 0, "active": 1}}
+INFO: {"key": 5, "value": {"name": "5", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 6, "value": {"name": "6", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 7, "value": {"name": "7", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 8, "value": {"name": "8", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 9, "value": {"name": "9", "coins": 5, "npc": 0, "active": 1}}
+INFO: {"key": 10, "value": {"name": "10", "coins": 5, "npc": 0, "active": 1}}

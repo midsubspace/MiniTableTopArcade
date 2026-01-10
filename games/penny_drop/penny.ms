@@ -8,34 +8,34 @@ game.pass=0
 game.roll_history=[]
 game.players={}
 game.play_order=[]
-game.players[1]={"name":"bot1","coins":12,"npc":0,"active":1}
-game.players[2]={"name":"bot2","coins":12,"npc":1,"active":0}
-game.players[3]={"name":"bot3","coins":12,"npc":1,"active":0}
-game.players[4]={"name":"bot4","coins":12,"npc":1,"active":0}
-game.players[5]={"name":"bot5","coins":12,"npc":1,"active":0}
-game.players[6]={"name":"bot6","coins":12,"npc":1,"active":0}
-game.players[7]={"name":"bot7","coins":12,"npc":1,"active":0}
-game.players[8]={"name":"bot8","coins":12,"npc":1,"active":0}
-game.players[9]={"name":"bot9","coins":12,"npc":1,"active":0}
-game.players[10]={"name":"bot10","coins":12,"npc":1,"active":0}
+game.players[1]={"name":"bot1","coins":5,"npc":1,"active":1}
+game.players[2]={"name":"bot2","coins":5,"npc":1,"active":0}
+game.players[3]={"name":"bot3","coins":5,"npc":1,"active":0}
+game.players[4]={"name":"bot4","coins":5,"npc":1,"active":0}
+game.players[5]={"name":"bot5","coins":5,"npc":1,"active":0}
+game.players[6]={"name":"bot6","coins":5,"npc":1,"active":0}
+game.players[7]={"name":"bot7","coins":5,"npc":1,"active":0}
+game.players[8]={"name":"bot8","coins":5,"npc":1,"active":0}
+game.players[9]={"name":"bot9","coins":5,"npc":1,"active":0}
+game.players[10]={"name":"bot10","coins":5,"npc":1,"active":0}
 names=file.readLines("/usr/games/penny_drop/data/names.txt")
 if names==null or names.len==0 then
     msl.log "/usr/games/penny_drop/data/names.txt is either blank or missing"
 else
     msl.log "Loaded "+names.len+" Names from /usr/games/penny_drop/data/names.txt"
 end if
-game.players[1].name=input("What is Your Name> ")
-player_count=input("How Many Players Do You Want To Play Against? (1-10)").val
-if player_count==0 then player_count=1
+player_count=input("How Many Players? (2-10)").val
+if player_count<2 then player_count=2
 if player_count>10 then player_count=10
-for i in range(2,player_count)
+for i in range(1,player_count)
     game.players[i].active=1
 end for
-human_count=input("How Many Human Players Are You Playing Against?(Max:"+(player_count)+")").val
+human_count=input("How Many Human Players Are Playing?(Max:"+(player_count)+")").val
 if human_count!=0 then
-    for i in range(2,human_count)
+    for i in range(1,human_count)
         if game.players[i].active==1 then
             game.players[i].npc=0
+            game.players[i].name=input("What is Your Name Player "+i+" >")
         end if
     end for
 end if
@@ -248,6 +248,13 @@ while true
         game.pass=0
         if player.value["npc"]==0 then
             while game.pass==0
+                if player.value["coins"]==0 then
+                    clear
+                    game.display_score
+                    print player.value["name"]+" Has Won!"
+                    wait 4
+                    reset;load "/usr/shared/scripts/menu.ms";clear;run
+                end if
                 if mouse.button then
                     if game.sprites.die.is_Clicked then
                         game.roll
@@ -259,12 +266,21 @@ while true
                         if game.sprites.die.is_Clicked then
                             game.pass=1
                             print player.value["name"]+" Has Chosen To Pass The Board"
+                            wait 1
+                            break
                         end if
                     end if
             end while
         else
             game.pass=0
             while game.pass==0
+                if player.value["coins"]==0 then
+                    clear
+                    game.display_score
+                    print player.value["name"]+" Has Won!"
+                    wait 3
+                    reset;load "/usr/shared/scripts/menu.ms";clear;run
+                end if
                 game.roll
                 game.display_spr "die"
                 game.display_penny game.die
