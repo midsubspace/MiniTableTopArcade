@@ -2,35 +2,39 @@ clear
 if env.importPaths.indexOf("/usr/shared/scripts") == null then
     env.importPaths.push "/usr/shared/scripts"
 end if
-msl={};import "msl"
+import "msl"
 game={}
 game.pass=0
 game.roll_history=[]
 game.players={}
 game.play_order=[]
-game.players[1]={"name":"bot1","coins":12,"npc":1,"active":1}
-game.players[2]={"name":"bot2","coins":12,"npc":1,"active":0}
-game.players[3]={"name":"bot3","coins":12,"npc":1,"active":0}
-game.players[4]={"name":"bot4","coins":12,"npc":1,"active":0}
-game.players[5]={"name":"bot5","coins":12,"npc":1,"active":0}
-game.players[6]={"name":"bot6","coins":12,"npc":1,"active":0}
-game.players[7]={"name":"bot7","coins":12,"npc":1,"active":0}
-game.players[8]={"name":"bot8","coins":12,"npc":1,"active":0}
-game.players[9]={"name":"bot9","coins":12,"npc":1,"active":0}
-game.players[10]={"name":"bot10","coins":12,"npc":1,"active":0}
+stack_pennies=12
+start_pennies=input("How Many Pennies Should Each Player Start With?(Default:12)> ").val
+if start_pennies==0 then start_pennies=12
+game.players[1]={"name":"bot1","coins":start_pennies,"npc":1,"active":0}
+game.players[2]={"name":"bot2","coins":start_pennies,"npc":1,"active":0}
+game.players[3]={"name":"bot3","coins":start_pennies,"npc":1,"active":0}
+game.players[4]={"name":"bot4","coins":start_pennies,"npc":1,"active":0}
+game.players[5]={"name":"bot5","coins":start_pennies,"npc":1,"active":0}
+game.players[6]={"name":"bot6","coins":start_pennies,"npc":1,"active":0}
+game.players[7]={"name":"bot7","coins":start_pennies,"npc":1,"active":0}
+game.players[8]={"name":"bot8","coins":start_pennies,"npc":1,"active":0}
+game.players[9]={"name":"bot9","coins":start_pennies,"npc":1,"active":0}
+game.players[10]={"name":"bot10","coins":start_pennies,"npc":1,"active":0}
 names=file.readLines("/usr/games/penny_drop/data/names.txt")
 if names==null or names.len==0 then
     msl.log "/usr/games/penny_drop/data/names.txt is either blank or missing"
 else
     msl.log "Loaded "+names.len+" Names from /usr/games/penny_drop/data/names.txt"
 end if
-player_count=input("How Many Players? (2-10)").val
+player_count=input("How Many Players? (2-10)> ").val
 if player_count<2 then player_count=2
 if player_count>10 then player_count=10
 for i in range(1,player_count)
     game.players[i].active=1
 end for
-human_count=input("How Many Human Players Are Playing?(Max:"+(player_count)+")").val
+human_count=input("How Many Human Players Are Playing?(Max:"+(player_count)+")> ").val
+if human_count>player_count then human_count=player_count
 if human_count!=0 then
     for i in range(1,human_count)
         if game.players[i].active==1 then
