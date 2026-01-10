@@ -1,32 +1,43 @@
 Starting up...
 INFO: Loaded 48 Names from /usr/games/penny_drop/data/names.txt
-INFO: {"key": 1, "value": {"name": "Great-Aunt Bonnie", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Great-Aunt Mabel", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Aunt Bonnie", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Aunt Pam", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Grandma Jean", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Great-Uncle Harold", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Cousin Josh", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Second Cousin Megan", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Uncle Ron", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "Great-Aunt Bonnie", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Great-Aunt Mabel", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Aunt Bonnie", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Aunt Pam", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Grandma Jean", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Great-Uncle Harold", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Cousin Josh", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Second Cousin Megan", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Uncle Ron", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 1, "value": {"name": "Great-Aunt Bonnie", "coins": 4, "npc": 1, "active": 1}}
-INFO: {"key": 2, "value": {"name": "Great-Aunt Mabel", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 3, "value": {"name": "Great-Aunt Bonnie", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 4, "value": {"name": "Aunt Pam", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 5, "value": {"name": "Grandma Jean", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 6, "value": {"name": "Great-Uncle Harold", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 7, "value": {"name": "Cousin Josh", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 8, "value": {"name": "Second Cousin Megan", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 9, "value": {"name": "Cousin Tammy", "coins": 5, "npc": 1, "active": 1}}
-INFO: {"key": 10, "value": {"name": "Uncle Ron", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 1, "value": {"name": "Aunt Pam", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 2, "value": {"name": "Uncle Steve", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 3, "value": {"name": "Aunt Lisa", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 4, "value": {"name": "Second Cousin Becky", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 5, "value": {"name": "Aunt Sandy", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 6, "value": {"name": "Aunt Carol", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 7, "value": {"name": "Great-Uncle Walt", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 9, "value": {"name": "Grandma Doris", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 10, "value": {"name": "Uncle Pete", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 1, "value": {"name": "Aunt Pam", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 2, "value": {"name": "Uncle Steve", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 3, "value": {"name": "Aunt Lisa", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 4, "value": {"name": "Second Cousin Becky", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 5, "value": {"name": "Aunt Sandy", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 6, "value": {"name": "Aunt Carol", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 7, "value": {"name": "Great-Uncle Walt", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 9, "value": {"name": "Grandma Doris", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 10, "value": {"name": "Uncle Pete", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 1, "value": {"name": "Aunt Pam", "coins": 4, "npc": 1, "active": 1}}
+INFO: {"key": 2, "value": {"name": "Uncle Steve", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 3, "value": {"name": "Aunt Lisa", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 4, "value": {"name": "Second Cousin Becky", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 5, "value": {"name": "Aunt Sandy", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 6, "value": {"name": "Aunt Carol", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 7, "value": {"name": "Great-Uncle Walt", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 9, "value": {"name": "Grandma Doris", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 10, "value": {"name": "Uncle Pete", "coins": 5, "npc": 1, "active": 1}}
+INFO: There are 0 Pennies on the board
+INFO: {"key": 1, "value": {"name": "Aunt Pam", "coins": 3, "npc": 1, "active": 1}}
+INFO: {"key": 2, "value": {"name": "Uncle Steve", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 3, "value": {"name": "Aunt Lisa", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 4, "value": {"name": "Second Cousin Becky", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 5, "value": {"name": "Aunt Sandy", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 6, "value": {"name": "Aunt Carol", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 7, "value": {"name": "Great-Uncle Walt", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 9, "value": {"name": "Grandma Doris", "coins": 5, "npc": 1, "active": 1}}
+INFO: {"key": 10, "value": {"name": "Uncle Pete", "coins": 5, "npc": 1, "active": 1}}

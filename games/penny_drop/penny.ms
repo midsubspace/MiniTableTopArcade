@@ -8,16 +8,16 @@ game.pass=0
 game.roll_history=[]
 game.players={}
 game.play_order=[]
-game.players[1]={"name":"bot1","coins":5,"npc":1,"active":1}
-game.players[2]={"name":"bot2","coins":5,"npc":1,"active":0}
-game.players[3]={"name":"bot3","coins":5,"npc":1,"active":0}
-game.players[4]={"name":"bot4","coins":5,"npc":1,"active":0}
-game.players[5]={"name":"bot5","coins":5,"npc":1,"active":0}
-game.players[6]={"name":"bot6","coins":5,"npc":1,"active":0}
-game.players[7]={"name":"bot7","coins":5,"npc":1,"active":0}
-game.players[8]={"name":"bot8","coins":5,"npc":1,"active":0}
-game.players[9]={"name":"bot9","coins":5,"npc":1,"active":0}
-game.players[10]={"name":"bot10","coins":5,"npc":1,"active":0}
+game.players[1]={"name":"bot1","coins":12,"npc":1,"active":1}
+game.players[2]={"name":"bot2","coins":12,"npc":1,"active":0}
+game.players[3]={"name":"bot3","coins":12,"npc":1,"active":0}
+game.players[4]={"name":"bot4","coins":12,"npc":1,"active":0}
+game.players[5]={"name":"bot5","coins":12,"npc":1,"active":0}
+game.players[6]={"name":"bot6","coins":12,"npc":1,"active":0}
+game.players[7]={"name":"bot7","coins":12,"npc":1,"active":0}
+game.players[8]={"name":"bot8","coins":12,"npc":1,"active":0}
+game.players[9]={"name":"bot9","coins":12,"npc":1,"active":0}
+game.players[10]={"name":"bot10","coins":12,"npc":1,"active":0}
 names=file.readLines("/usr/games/penny_drop/data/names.txt")
 if names==null or names.len==0 then
     msl.log "/usr/games/penny_drop/data/names.txt is either blank or missing"
@@ -44,7 +44,9 @@ for i in game.players
 end for
 for i in game.play_order
     if i.value["npc"]==1 then
-        i.value["name"]=names[floor(rnd*names.len)]
+        names.shuffle
+        name=names.pull
+        i.value["name"]=name
     end if
 end for
 
