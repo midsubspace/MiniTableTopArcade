@@ -30,3 +30,49 @@ Sprite.is_Clicked=function
 	// Return whether the mouse was released within bounds.
 	return self.contains(mouse)
 end function
+
+// Logging system from https://github.com/David-Avila/The-Slow-Library/tree/main
+
+logFile = "log.txt"
+
+recordStartup = function
+	content = []
+
+	content.push "Starting up..."
+
+	file.writeLines logFile, content
+end function
+
+recordStartup
+
+log = function(msg)
+	content = file.readLines(logFile)
+
+	content.push "INFO: " + msg
+
+	file.writeLines logFile, content
+end function
+
+warn = function(msg)
+	content = file.readLines(logFile)
+
+	content.push "WARNING: " + msg
+
+	file.writeLines logFile, content
+end function
+
+error = function(msg)
+	content = file.readLines(logFile)
+
+	content.push "ERROR: " + msg
+
+	file.writeLines logFile, content
+end function
+
+fatal = function(msg)
+	content = file.readLines(logFile)
+
+	content.push ("FATAL: " + msg).upper
+
+	file.writeLines logFile, content
+end function

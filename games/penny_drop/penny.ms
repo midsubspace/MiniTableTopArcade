@@ -2,13 +2,28 @@ clear
 if env.importPaths.indexOf("/usr/shared/scripts") == null then
     env.importPaths.push "/usr/shared/scripts"
 end if
-import "msl"
+msl={};import "msl"
 game={}
 game.roll_history=[]
-game.player={"name":"Elsbeth","coins":12}
-game.player2={"name":"Matlock","coins":12}
-game.player.name=input("Player One's Name> ")
-game.player2.name=input("Player Two's Name> ")
+game.players={}
+game.players[1]={"name":"bot1","coins":12,"npc":0,"active":1}
+game.players[2]={"name":"bot2","coins":12,"npc":1,"active":0}
+game.players[3]={"name":"bot3","coins":12,"npc":1,"active":0}
+game.players[4]={"name":"bot4","coins":12,"npc":1,"active":0}
+game.players[5]={"name":"bot5","coins":12,"npc":1,"active":0}
+game.players[6]={"name":"bot6","coins":12,"npc":1,"active":0}
+game.players[7]={"name":"bot7","coins":12,"npc":1,"active":0}
+game.players[8]={"name":"bot8","coins":12,"npc":1,"active":0}
+game.players[9]={"name":"bot9","coins":12,"npc":1,"active":0}
+game.players[10]={"name":"bot10","coins":12,"npc":1,"active":0}
+game.players[1].name=input("What is Your Name> ")
+player_count=input("How Many Players Do You Want To Play Against? (1-10)").val
+if player_count==0 then player_count=1
+if player_count>10 then player_count=10
+for i in range(2,player_count)
+    game.players[i].active=1
+end for
+
 game.board=["1","2","3","4","5","6"]
 game.slots={1:0,2:0,3:0,4:0,5:0,6:0}
 game.images={}
@@ -17,7 +32,7 @@ game.images.board=file.loadImage("/usr/games/penny_drop/images/board.png")
 game.images.penny=file.loadImage("/usr/games/penny_drop/images/penny_slot.png")
 game.drop_snd=file.loadSound("/usr/games/penny_drop/sounds/drop_sound.wav")
 game.roll_snd=file.loadSound("/usr/games/penny_drop/sounds/die_roll.wav")
-game.turn="player"
+game.turn=game.players[1]
 game.display_spr=function(sprite=null)
     if sprite==null then input("ERR:display_spr: No sprite var was passed to function notify dev")
     if sprite=="board" then
@@ -166,13 +181,41 @@ game.display_penny=function(slot=null)
         print display_penny_crash
     end if
 end function
-
+game.computer_logic=function()
+    iam=game.turn
+    print game.slots
+    pob=0//Pennies on board
+    print pennies_on_board
+    for slot in game.slots
+        if slot.value==1 then pob=pob+1
+    end for
+    //there are 5 slots that hold pennies
+    pass=0
+    if pob==5 then 
+        pass=1
+    else if pob==4 and iam.coins>1 then 
+        pass=1
+    else if pob==3 and iam.coins<3 then 
+        pass=1
+    else if pob==2 then
+        pass=0
+    else if pob==1 then
+        pass=0
+    end if
+end function
 game.display_score=function()
     text.clear
     text.row = 30
-    print  game.player.name+"'s Coins: "+game.player.coins
-    print game.player2.name+"'s Coins: "+game.player2.coins
-    print "Playing: "+game[game.turn].name
+    if game.turn=="player" then 
+        print ">"+game.player.name+"'s Coins: "+game.player.coins
+    else
+        print game.player.name+"'s Coins: "+game.player.coins
+    end if
+    if game.turn=="player2" then
+        print ">"+game.player2.name+"'s Coins: "+game.player2.coins
+    else
+        print game.player2.name+"'s Coins: "+game.player2.coins
+    end if
 end function
 game.roll=function(die=null)
     n=0
