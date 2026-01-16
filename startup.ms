@@ -1,2 +1,2 @@
-load "/usr/shared/scripts/menu.ms"
-run
+//load "/usr/shared/scripts/menu.ms"
+//run
