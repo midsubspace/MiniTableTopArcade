@@ -1,1 +1,146 @@
 Starting up...
+INFO at 3.973s: Loaded 48 Names from /usr/games/penny_drop/data/names.txt
+INFO at 12.766s: {"key": 1, "value": {"name": "Josh", "coins": 12, "npc": 0, "active": 1}}
+INFO at 12.775s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 12.782s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 12.791s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 12.8s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 12.808s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 12.814s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 12.821s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.029s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.042s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.057s: {"key": 1, "value": {"name": "Josh", "coins": 12, "npc": 0, "active": 1}}
+INFO at 13.066s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.074s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.08s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.09s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.098s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.105s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.112s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.119s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 13.128s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.234s: {"key": 1, "value": {"name": "Josh", "coins": 11, "npc": 0, "active": 1}}
+INFO at 27.243s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.251s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.259s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.269s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.461s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.468s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.475s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.482s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 27.492s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.03s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 31.039s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.046s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.107s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.114s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.122s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.13s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.142s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.15s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 31.157s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.812s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 33.821s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.829s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.837s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.847s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.855s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.863s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.871s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.882s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 33.89s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.216s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 39.227s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 39.235s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.245s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.255s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.262s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.27s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.279s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.287s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.294s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.301s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 39.308s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 39.317s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.324s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.331s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.338s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.347s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.355s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.363s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 39.37s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 40.654s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 40.683s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 40.695s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 11, "npc": 1, "active": 1}}
+INFO at 40.707s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 40.719s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 40.727s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 40.735s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 40.743s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 40.753s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 40.761s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 44.777s: There are 0 Pennies on the board
+INFO at 46.08s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 46.089s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 46.097s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 10, "npc": 1, "active": 1}}
+INFO at 46.105s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 46.115s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 46.123s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 46.131s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 46.138s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 46.147s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 46.156s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 50.177s: There are 0 Pennies on the board
+INFO at 51.446s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 51.455s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 51.463s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 9, "npc": 1, "active": 1}}
+INFO at 51.47s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 51.481s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 51.489s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 51.5s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 51.507s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 51.517s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 51.525s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 55.544s: There are 0 Pennies on the board
+INFO at 60.883s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 60.896s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 60.906s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 60.916s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 60.925s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 60.933s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 60.941s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 60.951s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 60.96s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 60.968s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 60.976s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 61.183s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 61.215s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 61.244s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 61.265s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 61.277s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 61.292s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 61.3s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 61.308s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 61.316s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 62.596s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 62.608s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 62.617s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 62.627s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 11, "npc": 1, "active": 1}}
+INFO at 62.636s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 62.644s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 62.652s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 62.662s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 62.903s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 62.911s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
+INFO at 66.932s: There are 0 Pennies on the board
+INFO at 68.35s: {"key": 1, "value": {"name": "Josh", "coins": 10, "npc": 0, "active": 1}}
+INFO at 68.378s: {"key": 2, "value": {"name": "Aunt Kathy", "coins": 14, "npc": 1, "active": 1}}
+INFO at 68.398s: {"key": 3, "value": {"name": "Second Cousin Alex", "coins": 12, "npc": 1, "active": 1}}
+INFO at 68.41s: {"key": 4, "value": {"name": "Aunt Pam", "coins": 10, "npc": 1, "active": 1}}
+INFO at 68.419s: {"key": 5, "value": {"name": "Great-Uncle Walt", "coins": 12, "npc": 1, "active": 1}}
+INFO at 68.43s: {"key": 6, "value": {"name": "Grandma Doris", "coins": 12, "npc": 1, "active": 1}}
+INFO at 68.439s: {"key": 7, "value": {"name": "Uncle Steve", "coins": 12, "npc": 1, "active": 1}}
+INFO at 68.447s: {"key": 8, "value": {"name": "Uncle Jimmy", "coins": 12, "npc": 1, "active": 1}}
+INFO at 68.455s: {"key": 9, "value": {"name": "Cousin Sam", "coins": 12, "npc": 1, "active": 1}}
+INFO at 68.465s: {"key": 10, "value": {"name": "Great-Aunt Betty", "coins": 12, "npc": 1, "active": 1}}
