@@ -4,24 +4,23 @@ if env.importPaths.indexOf("/usr/shared/scripts") == null then
 end if
 import "msl"
 game={}
+game.name="blackjack"
 game.players={}
 game.play_order=[]
 start_money=500
-game.players[1]={"name":"bot1","coins":start_money,"npc":1,"active":0}
-game.players[2]={"name":"bot2","coins":start_money,"npc":1,"active":0}
-game.players[3]={"name":"bot3","coins":start_money,"npc":1,"active":0}
-game.players[4]={"name":"bot4","coins":start_money,"npc":1,"active":0}
-game.players[5]={"name":"bot5","coins":start_money,"npc":1,"active":0}
-game.players[6]={"name":"bot6","coins":start_money,"npc":1,"active":0}
-game.players[7]={"name":"bot7","coins":start_money,"npc":1,"active":0}
-game.players[8]={"name":"bot8","coins":start_money,"npc":1,"active":0}
-game.players[9]={"name":"bot9","coins":start_money,"npc":1,"active":0}
-game.players[10]={"name":"bot10","coins":start_money,"npc":1,"active":0}
-names=file.readLines("/usr/games/blackjack/data/names.txt")
+game.players[1]={"name":"bot1","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[2]={"name":"bot2","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[3]={"name":"bot3","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[4]={"name":"bot4","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[5]={"name":"bot5","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[6]={"name":"bot6","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[7]={"name":"bot7","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[8]={"name":"bot8","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[9]={"name":"bot9","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+game.players[10]={"name":"bot10","cards":[],"card_total":0,"money":start_money,"npc":1,"active":0}
+names=file.readLines("/usr/games/"+game.name+"/data/names.txt")
 if names==null or names.len==0 then
-    msl.log "/usr/games/blackjack/data/names.txt is either blank or missing"
-else
-    msl.log "Loaded "+names.len+" Names from /usr/games/blackjack/data/names.txt"
+    msl.log "/usr/games/"+game.name+"/data/names.txt is either blank or missing"
 end if
 player_count=input("How Many Players? (2-10)> ").val
 if player_count<2 then player_count=2
@@ -49,3 +48,17 @@ for i in game.play_order
         i.value["name"]=name
     end if
 end for
+
+game.shuffle=function
+    suits=["Hearts","Clubs","Diamonds","Spades"]
+    ranks=["A","J","K","Q",2,3,4,5,6,7,8,9,10]
+    game.deck=[]
+    for suit in suits
+        for rank in ranks
+            game.deck.push("card"+suit+rank)
+        end for
+    end for
+end function
+game.shuffle
+print game.deck.len
+print game.deck

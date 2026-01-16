@@ -4,7 +4,6 @@ if env.importPaths.indexOf("/usr/shared/scripts") == null then
 end if
 import "msl"
 game={}
-game.name="Insert_Game_Name_Here"
 game.players={}
 game.play_order=[]
 start_money=500
@@ -18,11 +17,11 @@ game.players[7]={"name":"bot7","coins":start_money,"npc":1,"active":0}
 game.players[8]={"name":"bot8","coins":start_money,"npc":1,"active":0}
 game.players[9]={"name":"bot9","coins":start_money,"npc":1,"active":0}
 game.players[10]={"name":"bot10","coins":start_money,"npc":1,"active":0}
-names=file.readLines("/usr/games/"+game.name+"/data/names.txt")
+names=file.readLines("/usr/games/blackjack/data/names.txt")
 if names==null or names.len==0 then
-    msl.log "/usr/games/"+game.name+"/data/names.txt is either blank or missing"
+    msl.log "/usr/games/blackjack/data/names.txt is either blank or missing"
 else
-    msl.log "Loaded "+names.len+" Names from /usr/games/"+game.name+"/data/names.txt"
+    msl.log "Loaded "+names.len+" Names from /usr/games/blackjack/data/names.txt"
 end if
 player_count=input("How Many Players? (2-10)> ").val
 if player_count<2 then player_count=2
