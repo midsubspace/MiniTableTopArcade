@@ -23,3 +23,29 @@ if names==null or names.len==0 then
 else
     msl.log "Loaded "+names.len+" Names from /usr/games/blackjack/data/names.txt"
 end if
+player_count=input("How Many Players? (2-10)> ").val
+if player_count<2 then player_count=2
+if player_count>10 then player_count=10
+for i in range(1,player_count)
+    game.players[i].active=1
+end for
+human_count=input("How Many Human Players Are Playing?(Max:"+(player_count)+")> ").val
+if human_count>player_count then human_count=player_count
+if human_count!=0 then
+    for i in range(1,human_count)
+        if game.players[i].active==1 then
+            game.players[i].npc=0
+            game.players[i].name=input("What is Your Name Player "+i+" >")
+        end if
+    end for
+end if
+for i in game.players
+    if i.value["active"]==1 then game.play_order.push(i)
+end for
+for i in game.play_order
+    if i.value["npc"]==1 then
+        names.shuffle
+        name=names.pull
+        i.value["name"]=name
+    end if
+end for
