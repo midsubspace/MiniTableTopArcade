@@ -49,7 +49,7 @@ for i in game.play_order
     end if
 end for
 
-game.shuffle=function
+game.shuffle_deck=function
     suits=["Hearts","Clubs","Diamonds","Spades"]
     ranks=["A","J","K","Q",2,3,4,5,6,7,8,9,10]
     game.deck=[]
@@ -59,6 +59,4 @@ game.shuffle=function
         end for
     end for
 end function
-game.shuffle
-print game.deck.len
-print game.deck
+game.shuffle_deck
