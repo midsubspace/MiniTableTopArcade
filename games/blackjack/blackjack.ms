@@ -60,8 +60,10 @@ game.deck_gen=function
         while game.deck.indexOf(card)!=null 
             suit.shuffle;rank.shuffle
             card={suit[0]:rank[0]}
+            yield
         end while
         game.deck.push(card) 
+        yield
     end for
 end function
 game.deck_gen

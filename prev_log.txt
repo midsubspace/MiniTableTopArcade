@@ -1,2 +1,2 @@
 Starting up...
-INFO at 0.031s: Loaded 100 Names from /usr/games/blackjack/data/names.txt
+INFO at 0.024s: Loaded 100 Names from /usr/games/blackjack/data/names.txt
