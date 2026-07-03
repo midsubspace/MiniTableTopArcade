@@ -37,7 +37,7 @@ if human_count!=0 then
     for i in range(1,human_count)
         if game.players[i].active==1 then
             game.players[i].npc=0
-            game.players[i].name=input("What is Your Name Player "+i+" >")
+            game.players[i].name="Dev"//input("What is Your Name Player "+i+" >")
         end if
     end for
 end if
@@ -95,7 +95,7 @@ game.display_spr=function(sprite=null,card_name=null)
         pprint stackTrace;print crash
     end if
 end function
-
+clear
 game.shuffle_deck
 game.deck.shuffle
 card=game.deck[0]
